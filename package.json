@@ -1,0 +1,15 @@
+{
+  "name": "setup-uv",
+  "version": "0.1.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release:patch": "npm version patch -m \"chore: release %s\"",
+    "release:minor": "npm version minor -m \"chore: release %s\"",
+    "release:major": "npm version major -m \"chore: release %s\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
