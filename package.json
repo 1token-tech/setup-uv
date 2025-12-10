@@ -4,9 +4,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release:patch": "npm version patch -m \"chore: release %s\"",
-    "release:minor": "npm version minor -m \"chore: release %s\"",
-    "release:major": "npm version major -m \"chore: release %s\""
+    "release:patch": "npm version patch -m \"chore: release %s\" && git push && git push --tags",
+    "release:minor": "for i in 1 2 3 4 5; do read -p \"Type 'y' to confirm minor release ($i/5): \" c && [ \"$c\" = \"y\" ] || exit 1; done && npm version minor -m \"chore: release %s\" && git push && git push --tags",
+    "release:major": "for i in 1 2 3 4 5 6 7 8 9 10; do read -p \"Type 'y' to confirm major release ($i/10): \" c && [ \"$c\" = \"y\" ] || exit 1; done && npm version major -m \"chore: release %s\" && git push && git push --tags"
   },
   "keywords": [],
   "author": "",
