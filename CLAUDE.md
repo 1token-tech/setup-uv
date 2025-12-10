@@ -14,7 +14,7 @@ npm run release:minor   # 发布 minor 版本（需输入 'y' 5 次确认）
 npm run release:major   # 发布 major 版本（需输入 'y' 10 次确认）
 ```
 
-Release 命令会自动：bump 版本号 → 创建 commit → push 代码 → push tag
+Release 命令会自动：bump 版本号 → 创建 commit → push 代码 → push tag → 更新 v0.X 短标签
 
 ## Action Inputs
 

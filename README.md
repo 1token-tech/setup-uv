@@ -8,7 +8,7 @@ GitHub Action：安装并配置 uv Python 包管理器。
 steps:
   - uses: actions/checkout@v4
 
-  - uses: 1token-tech/setup-uv@master
+  - uses: 1token-tech/setup-uv@v0.1
     with:
       python-version: '3.13.9'  # 可选，默认 3.13.9
 ```
